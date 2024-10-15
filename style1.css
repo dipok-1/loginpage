@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+    overflow: hidden; 
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img2.jpg);
+    background-size: cover; /* Ensures the background covers the whole screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+}
+
+/* Media query to handle large desktop screens */
+@media (min-width: 1200px) {
+    body {
+        background-size: 100% 100%; /* Forces the background to stretch across the whole screen */
+    }
+}
+
+
+
+.container h1{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.container .input-box{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+}
+.container{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgb(255, 255,255,0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+.input-box input{
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    column-rule:#fff ;
+    padding: 20px 45px 20px 20px;
+
+}
+.input-box input::placeholder{
+    color: black;
+}
+.input-box i{
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 14.5px;
+   color: black;
+}
+.container .rememberlink-forget{
+    color: yellow;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.container .btn button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.1);
+}
+.container .btn button:hover{
+    background:rgba(255, 255, 255, 0.299) ;
+    color: #fff;
+    border-color: #fff;
+}
